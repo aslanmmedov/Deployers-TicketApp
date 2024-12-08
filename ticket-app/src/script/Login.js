@@ -1,8 +1,9 @@
-document.getElementById("loginForm").addEventListener("submit", async (event) => {
-    event.preventDefault();  
+let btnSubmit = document.querySelector(".submit")
 
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+btnSubmit.addEventListener("click", async (event) => {
+     event.preventDefault();  
+    const email = document.querySelector(".email").value;
+    const password = document.querySelector(".password").value;
     try {
 
         const response = await fetch("https://warm-west-marlin.glitch.me/users");
@@ -17,10 +18,8 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
 
         if (user) {
             localStorage.setItem('userLocal', JSON.stringify(user.id));      
-               
             if (user.isAdmin) {
-                
-                window.location.href = "admin.html";
+                window.location.href = "admin-dashboard.html";
             } else {
                 window.location.href = "dashboard.html";
                 console.log('user');
