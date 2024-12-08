@@ -3,13 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer type="module" src="src/script/main.js"></script>
     <title>Vite App</title>
 
   </head>
   <body>
-    <div id="app">
-      
-    </div>
+    <header
+      class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg"
+    >
+      <div class="px-4">
+        <div class="flex items-center justify-between">
+          <div class="flex shrink-0">
+            <a aria-current="page" class="flex items-center" href="/">
+              <svg id="logo-15" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M24.5 12.75C24.5 18.9632 19.4632 24 13.25 24H2V12.75C2 6.53679 7.03679 1.5 13.25 1.5C19.4632 1.5 24.5 6.53679 24.5 12.75Z" class="ccustom" fill="#17CF97"></path> <path d="M24.5 35.25C24.5 29.0368 29.5368 24 35.75 24H47V35.25C47 41.4632 41.9632 46.5 35.75 46.5C29.5368 46.5 24.5 41.4632 24.5 35.25Z" class="ccustom" fill="#17CF97"></path> <path d="M2 35.25C2 41.4632 7.03679 46.5 13.25 46.5H24.5V35.25C24.5 29.0368 19.4632 24 13.25 24C7.03679 24 2 29.0368 2 35.25Z" class="ccustom" fill="#17CF97"></path> <path d="M47 12.75C47 6.53679 41.9632 1.5 35.75 1.5H24.5V12.75C24.5 18.9632 29.5368 24 35.75 24C41.9632 24 47 18.9632 47 12.75Z" class="ccustom" fill="#17CF97"></path> </svg>
+              <p class="sr-only">Book Store</p>
+            </a>
+          </div>
+          <div
+            class="hidden md:flex md:items-center md:justify-center md:gap-5"
+          >
+            <a
+              aria-current="page"
+              class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-green-600 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              aria-current="page"
+              class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+              href="#"
+              >Events</a
+            >
+            <a
+              class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+              href="#"
+              >Venues</a
+            >
+          </div>
+          <div class="flex items-center justify-end gap-3">
+            <a
+              class="signin inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              href="login.html"
+              >Sign in</a
+            >
+            <a
+              class="signup inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              href="register.html"
+              >Sign Up</a
+            >
+            <a
+            id="logout"
+              class="logout inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              href="register.html"
+              >Log Out</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
