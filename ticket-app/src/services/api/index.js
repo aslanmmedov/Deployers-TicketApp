@@ -1,4 +1,4 @@
-const baseUrl = "https://warm-west-marlin.glitch.me"; 
+const baseUrl = "https://spotted-bumpy-soap.glitch.me"; 
 
 export const get = async (endpoint) => {
     try {
