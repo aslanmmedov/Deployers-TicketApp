@@ -1,6 +1,3 @@
-
-
-
 document.getElementById("loginForm").addEventListener("submit", async (event) => {
     event.preventDefault();  
 
@@ -10,14 +7,17 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
 
         const response = await fetch("https://warm-west-marlin.glitch.me/users");
         const users = await response.json();
+        // console.log(users)
 
      
         const user = users.find(u => u.email === email && u.password === password);
         console.log(user);
         
-        if (user) {
+        
 
-            localStorage.setItem('userLocal', JSON.stringify(user.id));
+        if (user) {
+            localStorage.setItem('userLocal', JSON.stringify(user.id));      
+               
             if (user.isAdmin) {
                 
                 window.location.href = "admin.html";
