@@ -1,0 +1,190 @@
+{
+    "events":[
+        {
+          "name": "test 4",
+          "date": "2025-01-02",
+          "venueId": "1",
+          "description": "good event",
+          "price": 30,
+          "capacity": 2000,
+          "stock": 200,
+          "image": "https://www.amsterdamnow.com/app/uploads/2017/10/festival-1.jpg",
+          "reviews": [
+            {
+              "userId": 1,
+              "rating": 3,
+              "comment": "good"
+            }
+          ],
+          "id": 1
+        }
+      ],
+
+    "venues":[
+        {
+          "id": 1,
+          "name": "Tech Hub",
+          "location": "City Center",
+          "capacity": 500
+        },
+        {
+          "id": 2,
+          "name": "Open Grounds",
+          "location": "Riverside",
+          "capacity": 1000
+        }
+      ],
+      "orders":[
+        {
+          "userId": 1,
+          "totalPrice": null,
+          "orderDate": "2024-12-07T12:44:56.135Z",
+          "items": [
+            {
+              "eventId": "2",
+              "quantity": 1,
+              "totalPrice": null
+            }
+          ],
+          "id": 4
+        },
+        {
+          "userId": 1,
+          "totalPrice": null,
+          "orderDate": "2024-12-07T14:25:18.559Z",
+          "items": [
+            {
+              "eventId": "2",
+              "quantity": 1,
+              "totalPrice": null
+            },
+            {
+              "eventId": "1",
+              "quantity": 1,
+              "totalPrice": null
+            }
+          ],
+          "id": 5
+        }
+      ],
+      "users":[
+        {
+          "id": 1,
+          "name": "Admin User",
+          "email": "admin@example.com",
+          "password": "admin123",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": true,
+          "basket": [
+            {
+              "eventId": "1",
+              "quantity": 4
+            }
+          ],
+          "favorites": []
+        },
+        {
+          "id": 2,
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "password": "password",
+          "balance": 150,
+          "totalSpent": 100,
+          "isAdmin": false,
+          "basket": []
+        },
+        {
+          "id": 3,
+          "name": "Jane Smith",
+          "email": "janesmith@example.com",
+          "password": "password",
+          "balance": 200,
+          "totalSpent": 75,
+          "isAdmin": false,
+          "basket": []
+        },
+        {
+          "name": "user",
+          "email": "johnoe@example.com",
+          "password": "user123",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 4,
+          "basket": []
+        },
+        {
+          "name": "idris",
+          "email": "idris@gmail.com",
+          "password": "idris123",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 5
+        },
+        {
+          "name": "idris",
+          "email": "idrisss@gmail.com",
+          "password": "sadsdasd",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 6
+        },
+        {
+          "name": "idris",
+          "email": "idrisssgmail@com",
+          "password": "aa",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 7
+        },
+        {
+          "name": "ADDTEST",
+          "email": "sj@shdh.com",
+          "password": "pass123",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 8
+        },
+        {
+          "name": "ADDTEST",
+          "email": "sj@shdh.com.edu",
+          "password": "sdjcm",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 9
+        },
+        {
+          "name": "ADDTEST",
+          "email": "johndoe@example.co",
+          "password": "fcsrfc",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 10
+        },
+        {
+          "name": "Qatar Airways",
+          "email": "ayparakerimova004@gmail.com",
+          "password": "wsfdcwedf",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 11
+        },
+        {
+          "name": "asxdad",
+          "email": "asdxa@gmail.com",
+          "password": "wedfewdf",
+          "balance": 0,
+          "totalSpent": 0,
+          "isAdmin": false,
+          "id": 12
+        }
+      ]
+}
